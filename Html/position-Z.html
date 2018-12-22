@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Position
+        </title>
+        <style>
+           .scroll {
+               width: 500px;
+               height: 200px;
+               background-color: gray;
+           }
+           .top {
+               width:120px;
+               height: 400px;
+               background-color: yellow;
+               position: fixed;
+               top: 25px;
+               right: 50px;
+               text-align: center;
+           }
+           .relative {
+               position: relative;
+               top: 5px;
+               left: 100px;
+           }
+           .absolute {
+               position: absolute;
+               left:300px;
+               top:50px;
+           }
+           .overlap1 {
+               position: absolute;
+               left:600px;
+               top:250px;
+               width: 200px;
+               height: 200px;
+               background-color: blue;
+               z-index: 3;
+           }
+           .overlap2 {
+               position: absolute;
+               left:700px;
+               top:350px;
+               width: 200px;
+               height: 200px;
+               background-color: red;
+               z-index: 1;
+           }
+           .overlap3 {
+               position: absolute;
+               left:500px;
+               top:300px;
+               width: 200px;
+               height: 200px;
+               background-color: green  ;
+               z-index: 4;
+           }
+        </style>
+    </head>
+<body>
+        <p class="relative">Div 2 Aligned with position relative</p>
+   <div class="scroll">
+       <p>Div 1 Aligned without position</p>
+   </div>
+   <div class="scroll">
+       <p class="relative">Div 2 Aligned with position relative</p>
+   </div>
+
+<div class="scroll">
+    <p class="absolute">Div 3 Aligned with position Absolute</p>
+</div>
+<div class="scroll">
+    <p>Div 4 Aligned without position</p>
+</div>
+<div class="scroll">
+    <p>Div 5 Aligned without position</p>
+</div>
+<div class="overlap1">
+     <p>Overlap this</p>
+</div>
+<div class="overlap2">
+        <p>Overlap this</p>
+   </div>
+   <div class="overlap3">
+        <p>Overlap this</p>
+   </div>
+<div class="top">
+    <h1 class="top">Keep this heading on the right side of the screen</h1>
+</div>
+</body>
+</html>
