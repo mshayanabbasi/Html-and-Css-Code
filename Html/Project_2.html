@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>
+            Project 2
+        </title>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <style>
+            body {
+                margin: 0;
+                padding: 0%;
+                width: 100%;
+                font-family: "sans-serif",Arial, Verdana;
+                background-image:url("images/")
+            }
+            .topline {
+                width: 100%;
+                height: 10px;
+                background:linear-gradient(red,#95201a);
+                margin: 0;
+            }
+            .limg {
+                margin: 0;
+                padding: 10px 0 0 150px;
+                float: left;
+            }
+            .logoname {
+                float: left;
+                padding-top: 75px;
+                font-size: 1.4em;
+                color:#bd1010;
+                font-weight: bold;
+            }
+            .search {
+                 float: right;
+                 padding: 75px 150px 0 0;
+            }
+            .navbar {
+                width: 1100px;
+                height: 50px;
+                border: none;
+                margin: 0;
+                margin-left: 130px;
+                margin-right: auto;
+                float: left;
+                
+            }
+            .navbar ul {
+                padding-left: 10px;
+            }
+            .navbar li {
+                list-style: none;
+                float: left;
+                padding: 0 25px 0 20px;
+                color:#777777;
+                font-size: 1em;
+                margin-top: 10px;
+            }
+            .navbarline {
+                height: 5px;
+                width: 1100px;
+                border: none;
+                margin-left: 130px;
+                margin-right: auto;
+                float: left;
+                background-color: #aa1f17;
+            }
+            .banner {
+                float: left;
+                margin-top: 10px;
+                margin-left: 130px;
+                box-shadow: 1px 2px 1px #888888; 
+            }
+            .scrolling {
+                margin-top: 10px;
+                float: left;
+                width: 1100px;
+                font-size: 1.2em;
+                margin: 130px;
+            }
+            .content {
+                width: 1100px;
+                height: 600px;
+                float: left;
+                margin-left: 130px;
+                background-color: #f9f9f9;
+                box-shadow: 1px 2px 2px 1px #888888;
+            }
+            .leftContent{
+                margin: 20px;
+                width: 70%;
+                float: left;
+                height: 450px;
+            }
+            .leftContentHeading h3 {
+                margin: 0;
+                color: #bd1010;
+
+            }
+            .leftContentHeading p{
+                margin: 0;
+                padding: 10px;
+                text-align: justify;
+                
+            }
+            .readmore {
+                float: right;
+                color: #bd1010;
+                font-weight: bold;
+                font-size: .8em;
+                margin: 0;
+                margin-top: 10px;
+
+            }
+            .leftServices {
+                width: 30%;
+                height: 200px;
+                margin:10px;
+                margin-top: 30px;
+                float: left;
+                background-color: #f2eeee;
+            }
+            .services {
+                width:100%;
+                height: 35px;
+                background: linear-gradient(red, #95201a);
+                margin: 0;
+                color: white;
+                text-align: center;
+            }
+            .services h4 {
+                margin: 0;
+                padding: 10px 0 0 10px;
+            }
+            .servicesp {
+                width: 90%;
+                margin: 10px;
+                text-align: justify;
+            }
+            p {
+                font-size: .9em;
+            }
+            .rightContent {
+                width: 23%;
+                height: 700px;
+                margin-right: 20px;
+                margin-top: 20px;
+                float: right;
+            }
+            .quote {
+                width:100%;
+                height: 40px;
+                background: linear-gradient(red,#95201a);
+                color: white;
+                border-radius: 10px;
+                text-align: center;
+            }
+            .quote h4 {
+                padding-top:10px;
+                
+            }
+            .OurService {
+                width: 100%;
+                height: 300px;
+                background-color: #f4f1f1;
+                margin: 0;
+                margin-top: 30px;
+
+            }
+            .offerings {
+                width: 100%;
+                height: 45px;
+                background-color: none;
+                margin: 0;
+                box-shadow: 0 2px 2px #888888;
+            }
+            .offerings h4 {
+                padding-top: 15px;
+                text-align: center;
+                color:#bd1010;
+            }
+            .check {
+                color: #bd1010;
+            }
+            .offerlist li {
+                list-style: none;
+                font-size: .9em;
+                padding: 10px 0 0 10px;
+            }
+            .inquiry {
+                width: 100%;
+                height: 45px;
+                background-color: none;
+                margin: 0;
+                background: url("images/handwritten.jpg");
+                background-size: 30% 90%;
+                background-repeat: no-repeat;
+                box-shadow: 0 2px 2px #888888;
+            }
+            .inquiry h4 {
+                padding-top: 15px;
+                text-align: center;
+                color:#bd1010;
+            }
+            
+            .footer {
+                margin: 0;
+                float: left;
+                width: 100%;
+                height: 175px;
+                background: linear-gradient(red,#95201a);
+                margin-top:25px;
+            }
+            .footer li {
+                list-style: none;
+                color: white;
+                padding-left: 10px 0 10px 150px; 
+            }
+            
+
+        </style>
+        </head>
+<body>
+            <div class="container">
+                <div class="topmenu">
+                        <div class="topline">
+                </div>
+                <div class="limg">
+                    <img src="images/logo.png" height="100px" width="100px">
+                </div>
+               <div class="logoname">
+                    anumasun
+               </div>
+               <div class="search">
+                   <form class="forngroup">
+                    Search <input></input>
+
+                   </form>
+               </div>
+               <div class="navbar">
+                    <ul>
+                        <li>Home</li>
+                        <li><span style="color:red;">Web Development</span></li>
+                        <li>Corporate</li>
+                        <li>Ecommerce</li>
+                        <li>News</li>
+                        <li>Tourism &amp; Travel</li>
+                        <li>Contact Us</li>
+                    </ul>
+                
+                </div>
+                <div class="navbarline">
+
+                </div>
+                </div>
+                <div class="banner">
+                    <img src="images/banner.jpg" alt="banner">
+                </div>
+                <div class="scrolling">
+                    <marquee scrollamount="5" direction="left">Web Development</marquee>
+                    <marquee scrollamount="2" direction="left">HTMl5 / CSS3</marquee>
+                    <marquee scrollamount="4" direction="left">Ecommerce / SEO /CMS</marquee>
+                    <marquee scrollamount="3" direction="left">facebook/ twitter/ linkedin</marquee>
+
+                </div>
+                <div class="content">
+                    <div class="leftContent">
+                        <div class="leftContentHeading">
+                            <h3>Welcome to anumasun</h3>
+                            <p>Welcome to KESAV ADITYAA IT SOLUTIONS PVT LTD,
+                                    we are one of the world's foremost providers of SAP, Orcale, Mobile Application,
+                                    Web Development and Outsourcing Services. We help our clients to transform in
+                                    order to improve their performance more effectively, we are having our presence
+                                    in <u>GCC, EAST ASIA and USA</u></p>
+                            <p class="readmore"> >>Read More.... </p>
+                        </div>
+                        <div class="leftServices">
+                            <div class="services">
+                                <h4>Web Development</h4>
+                            </div>
+                            <div class="servicesp">
+                                <p>Our experience of working with industry
+                                        leaders in the development of their systems has given Evince valuable insight into
+                                        the possibilities for solving business challenges by applying Internet technologies.</p><br><br>
+                                        <p class="readmore"> >>Read More....</p>
+                            </div>
+                        </div>
+                        <div class="leftServices">
+                                <div class="services">
+                                    <h4>ECommerce</h4>
+                                </div>
+                                <div class="servicesp">
+                                    <p>Our experience of working with industry
+                                            leaders in the development of their systems has given Evince valuable insight into
+                                            the possibilities for solving business challenges by applying Internet technologies.</p><br><br>
+                                            <p class="readmore"> >>Read More....</p>
+                                </div>
+                            </div>
+                            <div class="leftServices" style="margin-top:0px">
+                                    <div class="services">
+                                        <h4>SEO / CMS</h4>
+                                    </div>
+                                    <div class="servicesp">
+                                        <p>Our experience of working with industry
+                                                leaders in the development of their systems has given Evince valuable insight into
+                                                the possibilities for solving business challenges by applying Internet technologies.</p><br><br>
+                                                <p class="readmore"> >>Read More....</p>
+                                    </div>
+                                </div>
+                                <div class="leftServices">
+                                        <div class="services">
+                                            <h4>Online Marketing</h4>
+                                        </div>
+                                        <div class="servicesp">
+                                            <p>Our experience of working with industry
+                                                    leaders in the development of their systems has given Evince valuable insight into
+                                                    the possibilities for solving business challenges by applying Internet technologies.</p><br><br>
+                                                    <p class="readmore"> >>Read More....</p>
+                                        </div>
+                                    </div>
+                                    <div class="leftServices">
+                                            <div class="services">
+                                                <h4>MCommerce</h4>
+                                            </div>
+                                            <div class="servicesp">
+                                                <p>Our experience of working with industry
+                                                        leaders in the development of their systems has given Evince valuable insight into
+                                                        the possibilities for solving business challenges by applying Internet technologies.</p><br><br>
+                                                        <p class="readmore"> >>Read More....</p>
+                                            </div>
+                                        </div>
+                                        <div class="leftServices">
+                                                <div class="services">
+                                                    <h4>Direct Marketing</h4>
+                                                </div>
+                                                <div class="servicesp">
+                                                    <p>Our experience of working with industry
+                                                            leaders in the development of their systems has given Evince valuable insight into
+                                                            the possibilities for solving business challenges by applying Internet technologies.</p><br><br>
+                                                            <p class="readmore"> >>Read More....</p>
+                                                </div>
+                                            </div>
+                    
+                   
+            </div>
+            <div class="rightContent">
+                <div class="quote">
+                    <h4>Request a quote</h4>
+                </div>
+                <div class="OurService">
+                    <div class="offerings">
+                        <h4>Offerings</h4>
+                    </div>
+                    <div class="offerlist">
+                        <ul>
+                            <li><span class="check">&check;</span> PHP/MySql</li>
+                            <li><span class="check">&check;</span> Mobile Application</li>
+                            <li><span class="check">&check;</span> Web Development</li>
+                            <li><span class="check">&check;</span> Content Management</li>
+                            <li><span class="check">&check;</span> Iphone Application</li>
+                            <li><span class="check">&check;</span> Ipad Application</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="OurService">
+                    <div class="inquiry">
+                        <h4>Inquiry</h4>
+                    </div>
+                    <div class="inquiryform">
+                        
+                            <form class="formgroup">
+                                
+                                <input type="text" placeholder="Name">
+                                <input type="text" placeholder="Phone">
+                                <input type="text" name="email" placeholder="your email"><br><br>
+                                <input type="submit" value="submit">
+                            </form>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footerlink">
+            <ul>
+                <li>Web Services</li>
+                <li>PHP / My Sql</li>
+                <li>Online Marketing</li>
+                <li>SEO / CMS</li>
+                <li>Request quote</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+    </div>
+        
+</body>
+    
+    
+</html>
