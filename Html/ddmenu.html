@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drop Down Menu</title>
+    <style>
+        body {
+            margin: 200px;
+
+        }
+        #main {
+            margin: 0;
+            padding: 15px 15px 15px 0;
+            display: inline;
+            -webkit-box-shadow:1px 1px 5px rgba(0,0,0,0.15);
+            -moz-box-shadow:1px 1px 5px rgba(0,0,0,0.15);
+            box-shadow: 1px 1px 5px rgba(0,0,0,0.15);
+        }
+        #main li{
+            display: inline-block;
+            margin: 0;
+            padding: 15px 20px;
+            background-color: #fefefe;
+            cursor: pointer;
+            margin-right: -5px;
+            position: relative;
+
+        }
+        #main li:hover{
+            background-color: red;
+            color: #fff;
+        }
+        #dropdown {
+            position: absolute;
+            top:50px;
+            left: 0;
+            z-index: 2;
+            padding: 0;
+            opacity: 0;
+            visibility: hidden;
+            -webkit-box-shadow:1px 1px 5px rgba(0,0,0,0.15);
+            -moz-box-shadow:1px 1px 5px rgba(0,0,0,0.15);
+            box-shadow: 1px 1px 5px rgba(0,0,0,0.15);
+        }
+        #dropdown li {
+            color: black;
+            width: 150px;
+        }
+        #main li:hover #dropdown {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+    </style>
+</head>
+<body>
+    <ul id="main">
+        <li>Home</li>
+        <li>
+            Web Development
+            <ul id="dropdown">
+                <li>Web Design</li>
+                <li>Web Development</li>
+                <li>Illustrations</li>
+            </ul>
+        </li>
+        <li>Corporate</li>
+        <li>Ecommerce</li>
+        <li>News
+                <ul id="dropdown">
+                        <li>Latest News</li>
+                        <li>Political</li>
+                        <li>Sports</li>
+                    </ul>
+        </li>
+        <li>Tourism &amp; Travel</li>
+        <li>Contact</li>
+    </ul>
+</body>
+</html>
