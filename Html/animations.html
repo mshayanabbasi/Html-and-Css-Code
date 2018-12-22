@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animations</title>
+    <style>
+        #fade {
+            width: 200px;
+            height: 200px;
+            background: green;
+            -webkit-animation: animate 2s;
+            animation: animate 2s;
+           
+        }
+        @-webkit-keyframes animate {
+                from {background:green;}
+                to {background:blue;}
+            }
+            @keyframes animate {
+                from {background: green;}
+                to {background: blue;}
+            }
+            @-webkit-keyframes rotate {
+                from {
+                    -webkit-transform: rotate(0deg)
+                }
+                to {
+                    -webkit-transform: rotate(360deg)
+                }
+            }
+            #rotate img {
+                margin: 100px;
+                -webkit-animation-name: rotate;
+                -webkit-animation-duration: 5s;
+                -webkit-animation-iteration-count: infinite;
+                -webkit-animation-timing-function: linear;
+
+            }
+            #rotateX {
+                width: 200px;
+                height: 200px;
+                background-color: green;
+                -ms-transform: rotate(25deg);
+                -webkit-transform: rotate(25deg);
+                -o-transform: rotate(20deg);
+
+            }
+            #skew {
+                width: 200px;
+                height: 200px;
+                background-color: green;
+                margin-top: 50px;
+                margin-left: 150px;
+                -ms-transform: skewx(25deg);
+                -webkit-transform:skewx(25deg);
+                -o-transform: skewx(20deg);
+
+            }
+            #scale{
+                width: 200px;
+                height: 200px;
+                background-color: green;
+                margin-top: 50px;
+                margin-left: 150px;
+                -ms-transform: scale(1.5,1.5);
+                -webkit-transform:scale(1.5,1.5);
+                -o-transform: scale(1.5,1.5);
+
+            }
+            .banner{
+                width: 1100px;
+                height: 250px;
+                background-color: green;
+                /*chrome, safari, opera*/
+                -webkit-animation-name: banner;
+                -webkit-animation-duration: 25s;
+                -webkit-animation-timing-function: linear;
+                -webkit-animation-delay: 2s;
+                -webkit-animation-iteration-count: infinite;
+                -webkit-animation-direction: alternate;
+                -webkit-animation-play-state: running;
+                /*standard syntax*/
+                animation-name: banner;
+                animation-duration: 25s;
+                animation-timing-function: linear;
+                animation-delay: 2s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                animation-play-state: running;               
+            }
+             /*chrome,safari,opera*/
+             @-webkit-keyframes banner {
+                 0% {background-image:url("images/fb.png");left: 0px; top:0px;}
+             }
+    </style>
+</head>
+<body>
+    <div class="banner"></div>
+    <div id="fade"></div>
+    <div id="rotate"><img src="images/banner.jpg"></div>
+    <div id="rotateX"></div>
+    <div id="skew"></div>
+    <div id="scale"></div>
+</body>
+</html>
