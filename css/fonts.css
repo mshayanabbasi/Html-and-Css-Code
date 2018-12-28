@@ -1,0 +1,62 @@
+@font-face {
+    font-family:mySiteFont;
+    src:url(fonts/cour.ttf);
+}
+body {
+    font-family:mySiteFont;
+}
+.wordwrap {
+    width: 200px;
+    word-wrap: break-word;
+    text-align: justify;
+}
+.overflow p{
+    width:400px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.Cbreak {
+    width: 200px;
+    word-break: break-all;
+}
+.Hbreak {
+    width: 200px;
+    word-break: keep-all;
+
+}
+.brown, .white {
+    width: 1100px;
+    height: 200px;
+    background-color: #5d044a;
+    margin-right: auto;
+    margin-left: auto;  
+}
+.emboss{
+    color: #d3d3d3;
+    font-size: 400%;
+    font-weight: bold;
+    position: absolute;
+    z-index: 2;
+    top: 550px;
+    left: 200px;
+}
+.white {
+    background-color: white;
+}
+.back {
+    color: #464747;
+    font-size: 410%;
+    font-weight: bold;
+    z-index: 2;
+    position: absolute;
+    top: 550px;
+    left: 200px;
+}
+.shadow {
+    color: #d3d3d3;
+    font-size: 410%;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 75px;
+    text-shadow: 2px 2px 2px #7c7c7c;
+}
