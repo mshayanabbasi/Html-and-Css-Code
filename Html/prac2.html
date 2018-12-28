@@ -1,0 +1,730 @@
+<!doctype html>
+<html>
+<head>
+<title>Tourism and travel - HTML/CSS Course - beginners to professional</title>
+<meta charset="utf-8" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+body {
+margin:0;
+padding:0;
+width:100%;
+font-family:verdana, sans-serif, arial;
+background-color:#eaeaea;
+}
+a:link {color:#695003; background-color:transparent; text-decoration:none}
+a:visited {color:#695003; background-color:transparent; text-decoration:none}
+a:hover {color:#695003; background-color:transparent; text-decoration:underline}
+a:active {color:#695003; background-color:transparent; text-decoration:underline}
+#container {
+width:100%;
+margin:0;height:auto;
+background-color:none;
+margin-right:auto;
+margin-left:auto;
+}
+.navbar {
+width:100%;
+height:50px;
+background-color:#f8a900;
+border-bottom-left-radius:40px;
+border-bottom-right-radius:40px;
+margin:0;
+}
+#ulLeft {
+float:left;
+margin;0;
+margin-left:50px;
+}
+#ulRight {
+float:right;
+margin:0;
+margin-right:50px;}
+.navbar ul {
+margin:0;
+padding:0;
+}
+.navbar li {
+margin:0;
+margin-top:15px;
+float:left;
+list-style:none;
+font-size:.9em;
+padding:0 10px 0 10px;
+color:#695003;
+border-right:1px solid #554621;
+}
+.logobar {
+width:100%;
+height:150px;
+margin:0;
+background-color:#7c5800;
+border-top-left-radius:40px;
+border-top-right-radius:40px;border-bottom-left-radius:130px;
+border-bottom-right-radius:130px;
+box-shadow: 2px 2px 2px #8c8c8c;
+}
+.logo {
+width:40%;
+float:left;
+margin:0;
+}
+.logo img {
+float:left;
+width:75px;
+margin:0;
+margin-left:100px;
+margin-top:30px;
+}
+.logoTxt {
+float:left;
+font-weight:bold;
+margin-top:50px;
+padding:30px 30px 0 5px;
+color:white;margin-right:30px;
+border-right:2px solid #f8a900;
+}
+.logo p {
+float:right;
+color:white;
+margin-right:30px;
+margin:0;
+padding-top:65px;
+}
+.search {
+background-image:url(images/tourismbg.png);
+background-repeat:no-repeat;
+background-position: right;
+border-top-right-radius:40px;
+float:right;
+width:55%;
+margin:0;
+height:150px;
+}
+.formGroup {
+float:left;margin:0;
+margin-top:40px;
+color:white;
+font-size:.8em;
+}
+label {
+margin:0;
+margin-top:8px;
+float:left;
+}
+input {
+margin-top:5px;
+float:right;
+}
+.searchBtn {
+float:right;
+margin-top:10px;
+margin-left:100px;
+}
+.offer {
+width:80%;height:80px;
+background-color:#dddddd;
+border-radius:10px;
+margin-top:20px;
+margin-right:auto;
+margin-left:auto;
+}
+.imageTag {
+float:left;
+margin:0;
+}
+.imageTag img {
+float:left;
+margin-top:10px;
+margin-left:20px;
+-webkit-transform:rotate(75deg); /* Chrome, Safari, Opera */
+transform:rotate(75deg);
+}
+.imageTag p {
+width:500px;
+}.offerBtn button {
+width:120px;
+height:30px;
+float:right;
+background-color:yellow;
+position:relative;
+margin:23px;
+border-radius:10px;
+}
+#content {
+width:80%;
+height:auto;
+margin-top:20px;
+margin-right:auto;
+margin-left:auto;
+}
+.leftContent {
+width:249px;
+height:auto;
+margin:0;
+float:left;
+background-color:none;
+}.rightContent {
+width:830px;
+height:auto;
+margin:0;
+float:left;
+background-color:#dddddd;
+}
+.leftContent1 {
+width:90%;
+height:270px;
+background-color:orange;
+border-radius:5px;
+margin:0;
+float:left;
+}
+.leftContent1 table {
+width:95%;
+height:95%;
+margin:6px;
+border: 4px solid #7c5800;
+border-collapse: collapse;
+border-radius:5px;
+}.leftContent1 tr, td {
+border: 4px solid #7c5800;
+border-collapse: collapse;
+}
+.shape {
+float:left;
+margin:10px;
+width:40px;
+height:40px;
+background-color:yellow;
+border-top-left-radius:20px;
+border-top-right-radius:20px;
+border-bottom-left-radius:20px;
+font-size:1.9em;
+font-weight:bold;
+text-align:center;
+color:grey;
+}
+.leftContent1 h3 {
+margin:0;
+float:left;
+padding:0;font-size:1.3em;
+border-bottom:3px solid black;
+}
+.leftContent1 p {
+font-size:.8em;
+}
+.leftContent2 {
+width:90%;
+height:570px;
+background-color:#7c5800;
+border-radius:5px;
+margin:0;
+margin-top:20px;
+float:left;
+}
+.leftContent2 ul {
+margin:0;
+padding:0 0 0 10px;
+float:left;
+}.leftContent2 li {
+width:90%;
+margin:0;
+float:left;
+color:white;
+font-size:.7em;
+border-bottom:1px solid grey;
+padding:5px 0 5px 0;
+list-style:none;
+vertical-align:left;
+}
+.rightContent1 {
+width:100%;
+height:270px;
+background-image:url(images/dubaitour.jpg);
+margin:0;
+float:left;
+}
+.rightContent1 p {
+color:white;
+margin-left:20px;
+position:relative;
+top: 170px;text-shadow:4px 4px 4px #474643;
+font-weight:bold;
+}
+.rightContent2SIcons {
+float:left;
+width:100%;
+height:auto;
+margin:0;
+margin-top:20px;
+}
+.icons {
+float:right
+margin:0;
+margin-right:20px;
+}
+.icons button {
+float:right;
+margin-top:0;
+margin-left:10px;
+}.rightContent3 {
+width:100%;
+height:auto;
+margin:0;
+float:left;
+}
+.rightContent3Topics {
+width:100%;
+float:left;
+margin:0;
+margin-top:10px;
+}
+.contentHead {
+color:#00759a;
+font-size:1.2em;
+font-weight:bold;
+float:left;
+margin:0;
+margin-left:30px;
+}
+.seeAll {
+color:#00759a;font-size:.9em;
+float:left;
+margin:0;
+padding:5px 0 0 10px;
+}
+.arrow {
+width: 0;
+height: 0;
+border-top: 5px solid transparent;
+border-bottom: 5px solid transparent;
+border-left: 5px solid #00759a;
+float:left;
+margin:5px;
+margin-top:10px;
+}
+.rightContent3DetailsRow {
+width:100%;
+float:left;
+height:auto;
+}
+.rightContent3Details {
+width:30%;float:left;
+margin:0;
+margin-top:10px;
+margin-left:10px;
+margin-right:5px;
+}
+.details {
+width:240px;
+height:310px;
+background-color:#f7f6f6;
+border-radius:5px;
+margin:0;
+float:left;
+margin-bottom:20px;
+}
+.details img {
+margin:15px;
+border-radius:5px;
+float:left;
+}
+.details h3 {
+margin:0;margin-left:15px;
+font-size:.9em;
+font-weight:bold;
+color:#00759a;
+}
+.details h6 {
+color:#00759a;
+Float:right;
+margin-right:20px;
+font-weight:none;
+font-size:.5em;
+}
+.details p {
+margin:0;
+margin-left:15px;
+font-size:.6em;
+float:left;
+}
+.details h2 {
+float:right;
+font-size:1.5em;
+font-weight:boldclear:right;
+}
+.rightContent3Topics ul {
+float:left;
+margin:0;
+}
+.rightContent3Topics li {
+float:left;
+margin:0;
+list-style:none;
+font-size:.7em;
+padding:0 5px 0 5px;
+border-right:1px solid #554621;
+}
+.deals {
+width:100%;
+height:80px;
+background-color:#9d9a92;
+margin:0;
+float:left;
+border-bottom:10px solid #e0a411;
+}</style>
+</head>
+<body>
+<div id="container">
+<div class="navbar">
+<div id="ulLeft">
+<ul >
+<li><a href="home.html">Home</a></li>
+<li><a href="webdevelopment.html">Web Development</a></li>
+<li><a href="corporate.html">Corporate</a></li>
+<li><a href="ecommerce.html">Ecommerce</a></li>
+<li><a href="news.html">News</a></li>
+<li style="background-color:yellow"><a href="tourismandtravel.html">Tourism
+&amp; Travel</a></li>
+<li style="border:none"><a href="contact.html">Contact Us</a></li>
+</ul>
+</div>
+<div id="ulRight">
+<ul >
+<li>USD($)</li>
+<li>English</li>
+<li>Cart</li>
+<li style="border:none"><span style="color:yellow">?</span> Help</li>
+</ul>
+</div>
+</div><!--- navbar end here ----->
+<div class="logobar">
+<div class="logo">
+<img src="images/logo.png" alt="Logo" > <div
+class="logoTxt">anumasun</div>
+<p>Travel with an <span style="color:yellow">Insider</span></p>
+</div>
+<div class="search">
+<div class="formGroup">
+<form>
+<label for="Search" class="formLabel">Search Country:</label>
+<input list="country" name="country" placeholder="UAE">
+<datalist id="country">
+<option value="United Arab Emirates">
+<option value="Europe">
+<option value="USA">
+<option value="Africa">
+<option value="Asia">
+</datalist>
+</input><br />
+<label for="Search" class="formLabel">Search City:</label>
+<input list="city" name="city" placeholder="Dubai">
+<datalist id="city">
+<option value="Dubai">
+<option value="Abudhabi"><option value="Alain">
+<option value="Fujairah">
+</datalist>
+</input><br />
+<button class="searchBtn">Go</button>
+</form>
+</div>
+<p style="width:150px; float:right; padding:40px 100px 0 0;
+color:white; font-size:.8em">What's so great about <span style="color:yellow" >anumasun</span></p>
+</div>
+</div>
+<!--- logobar end here ----->
+<div class="offer">
+<div class="imageTag">
+<img src ="images/bag-tag.png" alt="Bag Tag" >
+<p><span style="font-size:1.7em; font-weight:bold;
+color:#f8a900;">Give $5, Get $5</span><br />
+Send your friends $5 to use and earn $5 on yours</p>
+</div>
+<div class="offerBtn">
+<button>LEARN MORE...</button>
+</div>
+</div>
+<!--- offer end here ----->
+<div id="content">
+<div class="leftContent"><div class="leftContent1">
+<table>
+<tr>
+<td style="height:80px">
+<div class="shape"> &micro; </div>
+<div class="shape"> &AElig; </div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>Guide to Dubai</h3>
+<p>Major attractions, tips and our top
+things to see and do.</p>
+</td>
+</tr>
+</table>
+</div>
+<!--- left content 2nd ----->
+<div class="leftContent2">
+<ul>
+<li style="font-size:1.2em; font-weight:bold; border-bottom:3px
+solid white"><span style="color:orange; font-size:1.6em">&seArr;</span> Things to Do</li>
+<li style="font-weight:bold; color:orange">All Things to do
+...</li>
+<li>Air, Helicopter &amp; Balloon Tours</li>
+<li>Cruises, Sailing &amp; Water Tours</li>
+<li>Day Trips &amp; Excursions</li><li>Multi-day &amp; Extended Tours</li>
+<li>Private &amp; Custom Tours</li>
+<li>Tours &amp; Sightseeing</li>
+<li>Transfers &amp; Ground Transport</li>
+<li>Theme Parks</li>
+<li style="font-weight:bold; color:orange; border:none">SEE ALL
+THINGS TO DO ...</li>
+</ul>
+<ul>
+<li style="font-size:1.2em; font-weight:bold; border-bottom:3px
+solid white"><span style="color:orange; font-size:1.6em">&seArr;</span> Top Attractions</li>
+<li>All Attractions ...</li>
+<li>Burj Al Arab</li>
+<li>Dubai Creek</li>
+<li>Burj Khalifa</li>
+<li>Jumeirah Mosque</li>
+<li>Dubai Museum</li>
+<li>Atlantis</li>
+<li style="font-weight:bold; color:orange; border:none">SEE ALL
+ATTRACTIONS ...</li>
+</ul>
+</div>
+</div>
+<!--- left content end here -----><div class="rightContent">
+<div class="rightContent1">
+<p> <span style="font-
+size:200%">Dubai</span><br />Tours and things to do hand-picked by our insiders</p>
+</div>
+<div class="rightContent2SIcons">
+<div class="icons">
+<button style="background-color:#3f59a6;
+color:white; font-weight:bold"><img src="images/fbicon.jpg" alt="Facebook" >Like</button>
+<button><img src="images/googleicon.png" alt="Google"
+>Share</button>
+<button><img src="images/twittericon.png" alt="Twitter"
+>Tweet</button>
+</div>
+</div>
+<div class="rightContent3">
+<div class="rightContent3Topics">
+<p class="contentHead">Top 10
+Picks</p><p class="seeAll">See All <div class="arrow"></div></p>
+</div>
+<div class="rightContent3DetailsRow">
+<div class="rightContent3Details">
+<div class="details"
+style="margin-left:20px;">
+<img
+src="images/burjkhalifa.jpg" alt="Burj Khalifa Top" >
+<h3>Burj Khalifa 'At the Top'
+Entrance Ticket</h3><img src="images/stars.jpg" alt="Star Rating" >
+<h6>1345
+Reviews</h6>
+<p>Dubai,
+United Arab Emirates</p>
+<p
+style="float:right; margin-right:20px; padding-top:20px">From USD</p>
+<p
+style="float:left; margin-left:130px; font-size:1.5em; font-weight:bold"><sup>$</sup>92.05</p>
+</div>
+</div>
+<!--- topic2 ----->
+<div
+class="rightContent3Details">
+<div
+class="details" style="margin-left:20px;">
+<img
+src="images/desertsafari.jpg" alt="Desert Safari" >
+<h3>4X4 Dubai
+Desert Safari, Camel Ride</h3>
+<img
+src="images/stars.jpg" alt="Star Rating" >
+<h6>879
+Reviews</h6>
+<p>Dubai,
+United Arab Emirates</p>
+<p
+style="float:right; margin-right:20px; padding-top:20px">From USD</p>
+<p
+style="float:left; margin-left:130px; font-size:1.5em; font-weight:bold"><sup>$</sup>75.25</p>
+</div></div>
+<!--- topic3 ----->
+<div
+class="rightContent3Details">
+<div
+class="details" style="margin-left:20px;">
+<img
+src="images/seaplane.jpg" alt="Sea Plane" >
+<h3>Dubai Sea
+Plane</h3>
+<img
+src="images/stars.jpg" alt="Star Rating" >
+<h6>441
+Reviews</h6>
+<p>Dubai,
+United Arab Emirates</p>
+<p
+style="float:right; margin-right:20px; padding-top:20px">From USD</p>
+<p
+style="float:left; margin-left:110px; font-size:1.5em; font-weight:bold"><sup>$</sup>210.75</p>
+<p
+style="float:right; margin-right:20px; font-weight:bold"><span style="text-decoration:line-
+through"><sup>$</sup>238.75</span><span style="color:red"> Save <sup>$</sup>28.00</span></p>
+</div>
+</div>
+</div>
+<!--- 2nd row ----->
+<div
+class="rightContent3Topics"><p
+class="contentHead">Tours &amp; Sightseeing</p><p class="seeAll">See All <div
+class="arrow"></div></p>
+<ul>
+<li style="border:none"><b>Only Show:</b></li>
+<li>City Tours</li>
+<li>Full DAy Tours</li>
+<li>Private Desert Safari</li>
+<li>Half DAy Tours</li>
+<li>Super Savers</li>
+<li style="border:none">Bus &amp; Minivan Tours</li>
+</ul>
+</div>
+<div class="rightContent3DetailsRow">
+<div class="rightContent3Details">
+<div class="details" style="margin-
+left:20px;">
+<img src="images/creek.jpg" alt="Dubai
+Creek" >
+<h3>Dubai City Half-Day Sightseeing
+Tour</h3>
+<img src="images/stars.jpg" alt="Star
+Rating" >
+<h6>2121 Reviews</h6>
+<p>Dubai, United Arab Emirates</p>
+<p style="float:right; margin-right:20px;
+padding-top:20px">From USD</p>
+<p style="float:left; margin-left:130px;
+font-size:1.5em; font-weight:bold"><sup>$</sup>34.05</p></div>
+</div>
+<!--- topic2 ----->
+<div
+class="rightContent3Details">
+<div class="details"
+style="margin-left:20px;">
+<img
+src="images/privatesafari.jpg" alt="Private Safari" >
+<h3>Private Tour: 4x4
+Desert Adventure Safari </h3>
+<img
+src="images/stars.jpg" alt="Star Rating" >
+<h6>578 Reviews</h6>
+<p>Dubai, United Arab
+Emirates</p>
+<p style="float:right;
+margin-right:20px; padding-top:20px">From USD</p>
+<p style="float:left;
+margin-left:130px; font-size:1.5em; font-weight:bold"><sup>$</sup>82.65</p>
+</div>
+</div>
+<!--- topic3 ----->
+<div
+class="rightContent3Details">
+<div class="details"
+style="margin-left:20px;">
+<img
+src="images/atlantis.jpg" alt="City Tour" ><h3>Full Day: City Tour
+Side Seeing Dubai</h3>
+<img
+src="images/stars.jpg" alt="Star Rating" >
+<h6>1215
+Reviews</h6>
+<p>Dubai, United Arab
+Emirates</p>
+<p style="float:right;
+margin-right:20px; padding-top:20px">From USD</p>
+<p style="float:left;
+margin-left:130px; font-size:1.5em; font-weight:bold"><sup>$</sup>62.45</p>
+</div>
+</div>
+</div>
+<!--- 3rd row ----->
+<div class="rightContent3Topics">
+<p
+class="contentHead">Transfers &amp; Multiday Tours</p><p class="seeAll">See All <div
+class="arrow"></div></p>
+</div>
+<div
+class="rightContent3DetailsRow">
+<div
+class="rightContent3Details">
+<div class="details"
+style="margin-left:20px;">
+<img
+src="images/dubaiairport.jpg" alt="Private Transfer" >
+<h3>Dubai Private
+Arrival Airport Transfer</h3><img
+src="images/stars.jpg" alt="Star Rating" >
+<h6>268 Reviews</h6>
+<p>Dubai, United Arab
+Emirates</p>
+<p style="float:right;
+margin-right:20px; padding-top:20px">From USD</p>
+<p style="float:left;
+margin-left:130px; font-size:1.5em; font-weight:bold"><sup>$</sup>12.05</p>
+</div>
+</div>
+<!--- topic2 ----->
+<div
+class="rightContent3Details">
+<div class="details"
+style="margin-left:20px;">
+<img
+src="images/nightcamp.jpg" alt="Over Night Safari" >
+<h3>Overnight Desert
+Camp: Dinner, Emirati Activities</h3>
+<img
+src="images/stars.jpg" alt="Star Rating" >
+<h6>1345
+Reviews</h6>
+<p>Dubai, United Arab
+Emirates</p>
+<p style="float:right;
+margin-right:20px; padding-top:20px">From USD</p>
+<p style="float:left;
+margin-left:115px; font-size:1.5em; font-weight:bold"><sup>$</sup>187.55</p>
+</div></div>
+<!--- topic3 ----->
+<div
+class="rightContent3Details">
+<div class="details"
+style="margin-left:20px;">
+<img
+src="images/nighttour.jpg" alt="Multiday Night tour" >
+<h3>3-Night Tour
+Including Burj Khalifa 'At the Top'</h3>
+<img
+src="images/stars.jpg" alt="Star Rating" >
+<h6>612 Reviews</h6>
+<p>Dubai, United Arab
+Emirates</p>
+<p style="float:right;
+margin-right:20px; padding-top:20px">From USD</p>
+<p style="float:left;
+margin-left:115px; font-size:1.5em; font-weight:bold"><sup>$</sup>452.38</p>
+</div>
+</div>
+</div>
+<!--- 4th row ----->
+</div>
+</div>
+</div>
+<!--- content end here ----->
+<div class="deals">
+</div></div>
+</body>
+</html>
