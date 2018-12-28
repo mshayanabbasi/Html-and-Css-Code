@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+    padding: 0%;
+    width: 100%;
+    font-family: "sans-serif",Arial, Verdana;
+    background-image:url("images/")
+}
+topline {
+    width: 100%;
+    height: 10px;
+    background:linear-gradient(red,#95201a);
+    margin: 0;
+    float: left;
+}
+.limg {
+    margin: 0;
+    padding: 10px 0 0 150px;
+    float: left;
+}
+logoname {
+    float: left;
+    padding-top: 75px;
+    font-size: 1.4em;
+    color:#bd1010;
+    font-weight: bold;
+}
+search {
+     float: right;
+     padding: 75px 150px 0 0;
+}
+nav {
+    width: 1100px;
+    height: 50px;
+    border: none;
+    margin: 0;
+    margin-left: 130px;
+    margin-right: auto;
+    float: left;
+    
+}
+nav ul {
+    padding-left: 10px;
+}
+nav li {
+    list-style: none;
+    float: left;
+    padding: 0 25px 0 20px;
+    color:#777777;
+    font-size: 1em;
+    margin-top: 10px;
+}
+.navbarline {
+    height: 5px;
+    width: 1100px;
+    border: none;
+    margin-left: 130px;
+    margin-right: auto;
+    float: left;
+    background-color: #aa1f17;
+}
+banner {
+    float: left;
+    margin-top: 10px;
+    margin-left: 130px;
+    box-shadow: 1px 2px 1px #888888; 
+}
+scrolling {
+    margin-top: 10px;
+    float: left;
+    width: 1100px;
+    font-size: 1.2em;
+    margin: 130px;
+}
+section {
+    width: 1100px;
+    height: 600px;
+    float: left;
+    margin-left: 130px;
+    background-color: white;
+    box-shadow: 1px 2px 2px 1px #888888;
+}
+leftContent{
+    margin: 20px;
+    width: 70%;
+    float: left;
+    height: 450px;
+}
+.leftContentHeading h3 {
+    margin: 0;
+    color: #bd1010;
+
+}
+.leftContentHeading p{
+    margin: 0;
+    padding: 10px;
+    text-align: justify;
+    
+}
+.readmore {
+    float: right;
+    color: #bd1010;
+    font-weight: bold;
+    font-size: .8em;
+    margin: 0;
+    margin-top: 10px;
+
+}
+article {
+    width: 30%;
+    height: 200px;
+    margin:10px;
+    margin-top: 30px;
+    float: left;
+    background-color: white;
+}
+.services {
+    width:100%;
+    height: 35px;
+    background: linear-gradient(red, #95201a);
+    margin: 0;
+    color: white;
+    text-align: center;
+}
+.services h4 {
+    margin: 0;
+    padding: 10px 0 0 10px;
+}
+.servicesp {
+    width: 90%;
+    margin: 10px;
+    text-align: justify;
+}
+p {
+    font-size: .9em;
+}
+rightContent {
+    width: 23%;
+    height: 700px;
+    margin-right: 20px;
+    margin-top: 20px;
+    float: right;
+}
+.quote {
+    width:100%;
+    height: 40px;
+    background: linear-gradient(red,#95201a);
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+.quote h4 {
+    padding-top:10px;
+    
+}
+.OurService {
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    margin: 0;
+    margin-top: 30px;
+
+}
+.offerings {
+    width: 100%;
+    height: 45px;
+    background-color: none;
+    margin: 0;
+    box-shadow: 0 2px 2px #888888;
+}
+.offerings h4 {
+    padding-top: 15px;
+    text-align: center;
+    color:#bd1010;
+}
+.check {
+    color: #bd1010;
+}
+.offerlist li {
+    list-style: none;
+    font-size: .9em;
+    padding: 10px 0 0 10px;
+}
+.inquiry {
+    width: 100%;
+    height: 45px;
+    background-color: none;
+    margin: 0;
+    background: url("images/handwritten.jpg");
+    background-size: 30% 90%;
+    background-repeat: no-repeat;
+    box-shadow: 0 2px 2px #888888;
+}
+.inquiry h4 {
+    padding-top: 15px;
+    text-align: center;
+    color:#bd1010;
+}
+
+footer {
+    margin: 0;
+    float: left;
+    width: 100%;
+    height: 175px;
+    background: linear-gradient(red,#95201a);
+    margin-top:25px;
+}
+footer li {
+    list-style: none;
+    color: white;
+    padding-left: 10px 0 10px 150px; 
+}
